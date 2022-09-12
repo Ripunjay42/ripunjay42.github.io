@@ -1155,10 +1155,10 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/3.gif");
+			background-image: url("../../images/bg11.jpg");
 			background-position: center;
-			background-size: auto, 800px 600px;
-			background-repeat: repeat;
+			background-size: cover;
+			background-repeat: no-repeat;
 			z-index: 1.4;
 		}
 
