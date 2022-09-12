@@ -1155,9 +1155,9 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/ac.gif");
+			background-image: url("../../images/3.gif");
 			background-position: center;
-			background-size: auto, 600px 337px;
+			background-size: auto, 800px 600px;
 			background-repeat: repeat;
 			z-index: 1.4;
 		}
