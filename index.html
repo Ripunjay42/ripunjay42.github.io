@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="shortcut icon" href="#">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 		<style>
 			.change-content{
           			text-align: center;
@@ -37,6 +38,7 @@
 			.nav ul li{
 				color: rgb(104, 236, 43);
 				font-weight: bold;
+				text-align: left;
 			}
 			.major{
 				color:rgb(104, 236, 43);
@@ -92,12 +94,43 @@
 			}
 			#preloader{
 			background: #000 url(images/pre3.gif) no-repeat center;
-			background-size: auto 25%;
+			background-size:auto 25%;
 			height: 100vh;
 			width: 100%;
 			position: fixed;
 			z-index: 100;
-		}
+			}
+			.container{
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+				column-gap: 20px;
+			}
+			.ico{
+				color: blueviolet;
+				font-size: 80px;
+				box-shadow: 16px 14px 20px #0000008c;
+				border:2px solid black;
+				transition: 0.8s;
+			}
+			.skillbox{
+				transition: 0.9s;
+			}
+			.skillbox:hover{
+				transform: scale(1.2);
+			}
+			/* .ico:hover{
+				transform: scale(1.1);
+				box-shadow: 2px 2px 2px #000;
+				z-index: 2;
+			} */
+			.skill-title P{
+				font-family: cursive;
+				color: antiquewhite;
+				font-size:medium;
+			}
 
 		</style>
 	</head>
@@ -120,10 +153,11 @@
 						</div>
 						<nav class="nav">
 							<ul>
-								<li><a href="#intro">Intro</a></li>
-								<li><a href="#project">project</a></li>
-								<li><a href="#resume">Resume</a></li>
-								<li><a href="#contact">Contact</a></li>
+								<li><a href="#intro"><i class="fa fa-user" style="color:blueviolet;"></i> Intro</a></li>
+								<li><a href="#project"><i class="fa fa-codepen" style="color:blueviolet;"></i> project</a></li>
+								<li><a href="#skill"><i class="fa-solid fa-laptop-code" style="color: blueviolet;"></i> Skill</a></li>
+								<li><a href="#resume"><i class="fa fa-file-alt" style="color:blueviolet;"></i> Resume</a></li>
+								<li><a href="#contact"><i class="fa fa-address-book" style="color:blueviolet;"></i> Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
@@ -139,7 +173,7 @@
 								<p>HELLO! My name is Ripunjay Choudhury.<br>A computer science student, Tech enthusiast  and  passionate about programming and design.</p>
 								<p>I was born and raised in Assam.I have done my undergraduation in Bsc(Hons.)CBCS Computer Science from L.C.B College(Guwahati).</p>
 								<p>Trying competitive programming  and my current focus is solving problems on LeetCode..</p>
-								<p><a href="#resume">more....</a></p>
+								<p style="color: rgb(104, 236, 43); font-family: cursive;"><a href="#skill"><i class="fa-solid fa-laptop-code" style="color: blueviolet;"></i> more....</a></p>
 							</article>
 
 						<!-- project -->
@@ -151,25 +185,137 @@
 										The program will use a device (e.g. webcam, camera etc.) through which it will detect whether the person or the persons are wearing face masks or not.
 										If it detects a person without face mask then it will capture an image and store it into the database. This project is needed to prevent higher risk of
 										spreading the coronavirus and to enforce those who don't follow proper guidelines to wear a mask.</p>
-										<button  class="float-left"><a href="https://github.com/Ripunjay42/Facemask_detector.git" class="icon brands fa-github">Source Code</a></button>
-										<button  class="float-right"><a href="https://drive.google.com/drive/folders/16e4vVclG_VGmullu36Jjv7UXbqHZi7ZJ?usp=sharing" class="icon brands fa-slack-hash">Demo</a></button>
+										<button  class="float-left"><a href="https://github.com/Ripunjay42/Facemask_detector.git" class="icon brands fa-github" style="color: rgb(104, 236, 43); font-family: cursive;">Source Code</a></button>
+										<button  class="float-right"><a href="https://drive.google.com/drive/folders/16e4vVclG_VGmullu36Jjv7UXbqHZi7ZJ?usp=sharing" class="icon brands fa-slack-hash" style="color: rgb(104, 236, 43); font-family: cursive;">Demo</a></button>
 									<br>
 									<br>
 									<span class="image main"><a href="https://github.com/Ripunjay42/ripunjay42.github.io.git"><img src="images/project12.gif" alt="centred-image" /></a></span>
 									<h3 style="text-align:center;color:rgb(104, 236, 43);"><a href="https://github.com/Ripunjay42/ripunjay42.github.io.git">PORTFOLIO</a></h3>
 									<p>This Portfolio is designed as a self learning project, as learning one subject or skill at a time is always the best option.</p>
-										<button  class="float-left"><a href="https://github.com/Ripunjay42/ripunjay42.github.io.git" class="icon brands fa-github">Source Code</a></button>
-										<button  class="float-right"><a href="https://ripunjay42.github.io" class="icon brands fa-slack-hash">Live Demo</a></button>
+										<button  class="float-left"><a href="https://github.com/Ripunjay42/ripunjay42.github.io.git" class="icon brands fa-github" style="color: rgb(104, 236, 43); font-family: cursive;">Source Code</a></button>
+										<button  class="float-right"><a href="https://ripunjay42.github.io" class="icon brands fa-slack-hash" style="color: rgb(104, 236, 43); font-family: cursive;">Live Demo</a></button>
 									<br>
 									<br>
 							</article>
+						<!--skills-->
+						<article id="skill">
+							<h3 class="major">My Skills</h3>
+							<div class="container">
+									<div class="skillbox">
+										<div class="skill-title">
+											<div class="ico">
+												<i class="devicon-c-line"></i>
+											</div>
+											<p>C</p>
+										</div>
+									</div>
+									<div class="skillbox">
+										<div class="skill-title">
+											<div class="ico">
+												<i class="devicon-cplusplus-plain"></i>
+											</div>
+											<p>CPP</p>
+										</div>
+									</div>
+									<div class="skillbox">
+										<div class="skill-title">
+											<div class="ico" tabindex="1">												
+												<i class="devicon-java-plain"></i>
+											</div>
+											<p>Java</p>
+										</div>
+									</div>
+									<div class="skillbox">
+										<div class="skill-title">
+											<div class="ico">												
+												<i class="devicon-python-plain"></i>         
+											</div>
+											<p>Python</p>
+										</div>
+									</div>
+									<div class="skillbox">
+										<div class="skill-title">
+											<div class="ico">
+												<i class="devicon-javascript-plain"></i>
+											</div>
+											<p>javascript</p>
+										</div>
+									</div>
+									<div class="skillbox">
+										<div class="skill-title">
+											<div class="ico">
+												<i class="devicon-html5-plain"></i>
+											</div>
+											<br>
+											<p>HTML</p>
+										</div>
+									</div>
+									<div class="skillbox">
+										<div class="skill-title">
+											<div class="ico">
+												<i class="devicon-css3-plain"></i>
+											</div>
+											<p>CSS</p>
+										</div>
+									</div>
+									<div class="skillbox">
+										<div class="skill-title">
+											<div class="ico">
+												<i class="devicon-bootstrap-plain"></i>
+											</div>
+											<p>Bootstrap</p>
+										</div>
+									</div>
+									<div class="skillbox">
+										<div class="skill-title">
+											<div class="ico">
+												<i class="devicon-django-plain"></i>
+											</div>
+											<p>Django</p>
+										</div>
+									</div>
+									<div class="skillbox">
+										<div class="skill-title">
+											<div class="ico">
+												<i class="devicon-mysql-plain"></i>
+											</div>
+											<p>MySQL</p>
+										</div>
+									</div>
+									<div class="skillbox">
+										<div class="skill-title">
+											<div class="ico">
+												<i class="devicon-sqlite-plain"></i>
+											</div>
+											<p>SQLite3</p>
+										</div>
+									</div>
+									<div class="skillbox">
+										<div class="skill-title">
+											<div class="ico">
+												<i class="devicon-debian-plain"></i>
+											</div>
+											<p>Debian</p>
+										</div>
+									</div>
+									<div class="skillbox">
+										<div class="skill-title">
+											<div class="ico">
+												<i class="devicon-git-plain"></i>
+											</div>
+											<p>Git</p>
+										</div>
+									</div>
+							</div>
+						</article>
+
 						<!-- Resume -->
 						<article id="resume">
 							<h3 class="major">Resume</h3>
 							<div class="geeks">
 								<span class="image main"><img src="images/resume.jpg" alt="" /></span>
 							</div>
-							<p><a href="images/resume.pdf">Download</a></p>
+							<p style="font-family:cursive; color:rgb(104, 236, 43); font-size:18px;"><a href="images/resume.pdf"><i class="fa-solid fa-download" style="color:blueviolet;"></i> download</a></p>
 							<p></p>
 						</article>
 
@@ -197,10 +343,10 @@
 									</ul>
 								</form>
 								<ul class="icons">
-									<li><a href="https://www.linkedin.com/in/ripunjay-choudhury-83864524b/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-									<li><a href="https://github.com/Ripunjay42" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-									<!-- <li><a href="mailto: ripunjaychoudhury42@gmail.com" class="icon brands fa fa-commenting-o"><span class="label">Send Email</span></a></li> -->
-									<li><a href="https://wa.me/+919127433184" class="icon brands fa-whatsapp"><span class="label">Whatsapp</span></a></li>
+									<li><a href="https://www.linkedin.com/in/ripunjay-choudhury-83864524b/"><i class="fa-brands fa-linkedin" style="color:blueviolet;"></i></a></li>
+									<li><a href="https://github.com/Ripunjay42"><i class="fa-brands fa-github" style="color:blueviolet;"></i></a></li>
+									<li><a href="mailto:ripunjaychoudhury42@gmail.com?subject=subject text"><i class="fa-solid fa-envelope" style="color:blueviolet;"></i></a></li>
+									<li><a href="https://wa.me/+919127433184"><i class="fa-brands fa-square-whatsapp" style="color:blueviolet;"></i></a></li>
 								</ul>
 							</article>
 
@@ -466,6 +612,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<div id="bg"></div>
 
 		<!-- Scripts -->
+			<script src="https://kit.fontawesome.com/12cff95e26.js" crossorigin="anonymous"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
