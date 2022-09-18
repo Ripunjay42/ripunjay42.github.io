@@ -32,9 +32,6 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-body {
-  font-size: 10pt; // Any value here will be Ok, (spoiler alert: even none as it'll be set later by JS)
-}
 
 ol, ul {
 	list-style: none;
