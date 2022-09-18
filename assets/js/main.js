@@ -3,23 +3,6 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-function zoom() {
-  var $window = $(this),
-      relX = ($window.width() / 1440), //We use our screen size as scale reference
-      relY = ($window.height() / 779),
-      rel;
-  if (relX < relY) { //Always select the scale from the most shrinked axis
-    rel = relX;
-  } else {
-    rel = relY;
-  }
-  $("body").css("font-size", "" + (10.0 * rel) + "pt"); // Here you use the default size you chosen for the body
-};
-
-$(function(){
-  $(window).resize(zoom); // Set a listener to call zoom whenever the window is resized
-  zoom(); // Call zoom after page is loaded
-});
 (function($) {
 
 	var	$window = $(window),
