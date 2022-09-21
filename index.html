@@ -50,7 +50,7 @@
 				text-align:left;
 				font-style: italic;
 				font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-				font-size:18px;
+				font-size:20px;
 			}
 			#intro img{
 				border-radius: 50%;
@@ -62,22 +62,28 @@
 				text-align:center;
 				font-style: italic;
 				font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-				font-size:18px;
+				font-size:20px;
 			}
 			 #project img{
 				display: block;
   				margin-left: auto;
   				margin-right: auto;
 				border-style:solid;
-     			border-color:blueviolet;
+				box-shadow: 16px 14px 20px #0000008c;
+				border:solid rgb(77, 31, 119);;
      			border-width: 6px;
 				width: 80%;
   				height: auto;
+				transition: 0.8s;
+			}
+			#project img:hover{
+				transform: scale(1.1);
+				border: 6px solid rgb(157, 53, 255);
 			}
 			#resume img{
 				border-style:solid;
      			border-color:blueviolet;
-     			border-width: 8px;
+     			border-width: 6px;
 			}
 			button{
 				width: 180px;
@@ -107,6 +113,11 @@
 			position: fixed;
 			z-index: 100;
 			}
+			/* .cer{
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+				column-gap: 80px;
+			} */
 			.container{
 				display: grid;
 				grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
@@ -119,26 +130,26 @@
 				color: blueviolet;
 				font-size: 80px;
 				box-shadow: 16px 14px 20px #0000008c;
-				border:2px solid blueviolet;
+				border:1px solid rgb(54, 32, 75);
 				transition: 0.8s;
 			}
 			.skillbox{
-				transition: 0.9s;
+				transition: 0.8s;
 			}
 			.skillbox:hover{
-				transform: scale(1.2);
+				transform: scale(1.1);
 			}
-			.pro{
+			/* .pro{
 				transition: 0.9s;
 			}
 			.pro:hover{
-				transform: scale(1.2);
-			}
-			/* .ico:hover{
 				transform: scale(1.1);
-				box-shadow: 2px 2px 2px #000;
-				z-index: 2;
+				
 			} */
+			.ico:hover{
+				transform: scale(1.05);
+				border: 2px solid rgb(142, 38, 240);
+			}
 			.skill-title P{
 				font-family: cursive;
 				color: antiquewhite;
@@ -335,6 +346,7 @@
 									</div>
 							</div>
 							<h3 class="major">certificates</h3>
+							<div class="cer">
 								<h3 style="text-align:left;font-family:cursive;color:rgb(104, 236, 43); font-size:small;font-weight: bold;"><a>1.DSA</a></h3>
 									<button  class="float-right" onclick="parent.location='https://drive.google.com/file/d/13fZDYzNwy4gTaKGUhVMpGgJnhOClpsAp/view?usp=sharing'"><div style="color:chartreuse;font-size: 14px;"><i class="fa-solid fa-paperclip" style="color:blueviolet; font-size:15px;"></i>credential</div></button><br><br>
 								<h3 style="text-align:left;font-family:cursive;color:rgb(104, 236, 43); font-size:small;font-weight: bold;"><a>2.Java Programming</a></h3>
@@ -344,7 +356,8 @@
 								<h3 style="text-align:left;font-family:cursive;color:rgb(104, 236, 43); font-size:small;font-weight: bold;"><a>4.Microsoft Excel</a></h3>
 									<button  class="float-right" onclick="parent.location='https://drive.google.com/file/d/1oQmxYiHG-7f-ccwKDjsfW2p2JGWNTj13/view?usp=sharing'"><div style="color:chartreuse;font-size: 14px;"><i class="fa-solid fa-paperclip" style="color:blueviolet; font-size:15px;"></i>credential</div></button><br><br>
 								<h3 style="text-align:left;font-family:cursive;color:rgb(104, 236, 43); font-size:small;font-weight: bold;"><a>5.Typing</a></h3>
-									<button  class="float-right" onclick="parent.location='https://drive.google.com/file/d/1v8ZU_3pbWITbzRiBHi3OT59-LumDrjHV/view?usp=sharing'"><div style="color:chartreuse;font-size: 14px;"><i class="fa-solid fa-paperclip" style="color:blueviolet; font-size:15px;"></i>credential</div></button><br><br>		
+									<button  class="float-right" onclick="parent.location='https://drive.google.com/file/d/1v8ZU_3pbWITbzRiBHi3OT59-LumDrjHV/view?usp=sharing'"><div style="color:chartreuse;font-size: 14px;"><i class="fa-solid fa-paperclip" style="color:blueviolet; font-size:15px;"></i>credential</div></button><br><br>
+							</div>				
 						</article>
 
 						<!-- Resume -->
