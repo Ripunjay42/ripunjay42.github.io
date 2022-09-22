@@ -1657,3 +1657,38 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+		
+
+
+
+		#container {
+			text-align: center;
+		}
+		
+		#text {
+			display: inline-block;
+			vertical-align: middle;
+			letter-spacing: 2px;
+			font-size: 18px;
+			color: rgb(104, 236, 43) ;
+        	font-weight:bold;
+			font-style: italic;
+		}
+		
+		#cursor {
+			display: inline-block;
+			vertical-align: middle;
+			width: 3px;
+			height: 25px;
+			background-color:blueviolet;
+			animation: blink 0.50s step-end infinite;
+		}
+		
+		@keyframes blink {
+			from, to { 
+				background-color: transparent 
+			}
+			50% { 
+				background-color:blueviolet; 
+			}
+		}
