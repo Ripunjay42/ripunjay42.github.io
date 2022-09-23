@@ -72,14 +72,14 @@
 				border-style:solid;
 				box-shadow: 16px 14px 20px #0000008c;
 				border:solid rgb(100, 31, 200);;
-     			border-width: 6px;
+     			border-width: 4px;
 				width: 80%;
   				height: auto;
 				transition: 0.8s;
 			}
 			#project img:hover{
-				transform: scale(1.1);
-				border: 6px solid rgb(157, 53, 255);
+				transform: scale(1.02);
+				border: 4px solid rgb(157, 53, 255);
 			}
 			#resume img{
 				border-style:solid;
@@ -138,7 +138,7 @@
 				transition: 0.8s;
 			}
 			.skillbox:hover{
-				transform: scale(1.1);
+				transform: scale(1.03);
 			}
 			/* .pro{
 				transition: 0.9s;
@@ -148,15 +148,38 @@
 				
 			} */
 			.ico:hover{
-				transform: scale(1.05);
 				border: 2px solid rgb(142, 38, 240);
+				transform: scale(1.03);
 			}
 			.skill-title P{
 				font-family: cursive;
 				color: antiquewhite;
 				font-size:medium;
 			}
-
+			.containerr{
+				display: grid;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+				row-gap: 30px;
+			}
+			.boxx{
+				margin: auto;
+				color: blueviolet;
+				box-shadow:10px 10px 10px 10px black;
+				border:1px solid rgb(100, 32, 190);
+				transition: 0.8s;
+			}
+			.boxx:hover{
+				transform: scale(1.02);
+				box-shadow: blueviolet 0px 5px 15px;
+			}
+			.boxx h3{
+				padding-top: 20px;
+			}
+			.boxx .btn{
+				padding-bottom: 25px;
+			}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -183,7 +206,7 @@
 						<nav class="nav">
 							<ul>
 								<li><a href="#intro"><i class="fa fa-user" style="color:blueviolet;"></i> Intro</a></li>
-                                                                <li><a href="#skill"><i class="fa-solid fa-laptop-code" style="color: blueviolet;"></i> Skill</a></li>
+								<li><a href="#skill"><i class="fa-solid fa-laptop-code" style="color: blueviolet;"></i> Skill</a></li>
 								<li><a href="#project"><i class="fa fa-codepen" style="color:blueviolet;"></i> project</a></li>
 								<li><a href="https://drive.google.com/file/d/1ZT_CUB7vevHHANz5wEsd5YQLrMU9Mnca/view?usp=sharing"><i class="fa fa-file-alt" style="color:blueviolet;"></i> Resume</a></li>
 								<li><a href="#contact"><i class="fa fa-address-book" style="color:blueviolet;"></i> Contact</a></li>
@@ -207,30 +230,34 @@
 
 						<!-- project -->
 							<article id="project">
-									<h3 class="major">My Projects</h3>
-									<h3 style="text-align:center;color:rgb(104, 236, 43);"><a>REAL TIME FACE MASK DETECTOR</a></h3>
-									<div class="pro">
-										<span class="image main"><a><img src="images/project15.gif"  alt="centred-image" /></a></span>
+								<h3 class="major">My Projects</h3>
+								<div class="containerr">
+									<div class="boxx">								
+										<h3 style="text-align:center;color:rgb(104, 236, 43);"><a>REAL TIME FACE MASK DETECTOR</a></h3>
+										<div class="pro">
+											<span class="image main"><a><img src="images/project15.gif"  alt="centred-image" /></a></span>
+										</div>
+											<p>The project is called the Face Mask Detection where it uses facial and object recognition to accurately distinguish those with or without masks.
+											The program will use a device (e.g. webcam, camera etc.) through which it will detect whether the person or the persons are wearing face masks or not.
+											If it detects a person without face mask then it will capture an image and store it into the database. This project is needed to prevent higher risk of
+											spreading the coronavirus and to enforce those who don't follow proper guidelines to wear a mask.</p>
+											<div class="btn">
+											<button  class="float-left" onclick="parent.location='https://github.com/Ripunjay42/Facemask_detector.git'"><div style="color:rgb(104, 236, 43);"><i class="fa-brands fa-github" style="color:blueviolet; font-size:20px"></i>Source Code</div></button>
+											<button  class="float-right" onclick="parent.location='https://drive.google.com/drive/folders/16e4vVclG_VGmullu36Jjv7UXbqHZi7ZJ?usp=sharing'"><div style="color:rgb(104, 236, 43);"><i class="fa-solid fa-arrow-up-right-from-square" style="color:blueviolet; font-size:20px"></i>Demo</div></a></button>
+											</div>
+									</div>	
+									<div class="boxx">								
+										<h3 style="text-align:center;color:rgb(104, 236, 43);"><a>PORTFOLIO</a></h3>
+										<div class="pro">
+											<span class="image main"><a><img src="images/project14.gif" alt="centred-image" /></a></span>
+										</div>
+											<p>This Portfolio is designed as a self learning project, as learning one subject or skill at a time is always the best option.</p>
+											<div class="btn">									
+											<button  class="float-left" onclick="parent.location='https://github.com/Ripunjay42/ripunjay42.github.io.git'"><div style="color:rgb(104, 236, 43);"><i class="fa-brands fa-github" style="color:blueviolet; font-size:20px;"></i>Source Code</div></button>
+											<button  class="float-right" onclick="parent.location='https://ripunjay42.github.io'"><div style="color:rgb(104, 236, 43);"><i class="fa-solid fa-arrow-up-right-from-square" style="color:blueviolet; font-size:20px;"></i>Live Demo</div></button>
+											</div>
 									</div>
-									<p>The project is called the Face Mask Detection where it uses facial and object recognition to accurately distinguish those with or without masks.
-										The program will use a device (e.g. webcam, camera etc.) through which it will detect whether the person or the persons are wearing face masks or not.
-										If it detects a person without face mask then it will capture an image and store it into the database. This project is needed to prevent higher risk of
-										spreading the coronavirus and to enforce those who don't follow proper guidelines to wear a mask.</p>
-										<button  class="float-left" onclick="parent.location='https://github.com/Ripunjay42/Facemask_detector.git'"><div style="color:rgb(104, 236, 43);"><i class="fa-brands fa-github" style="color:blueviolet; font-size:20px"></i>Source Code</div></button>
-										<button  class="float-right" onclick="parent.location='https://drive.google.com/drive/folders/16e4vVclG_VGmullu36Jjv7UXbqHZi7ZJ?usp=sharing'"><div style="color:rgb(104, 236, 43);"><i class="fa-solid fa-arrow-up-right-from-square" style="color:blueviolet; font-size:20px"></i>Demo</div></a></button>
-									<br>
-									<br>
-									<br>
-									<h3 style="text-align:center;color:rgb(104, 236, 43);"><a>PORTFOLIO</a></h3>
-									<div class="pro">
-										<span class="image main"><a><img src="images/project14.gif" alt="centred-image" /></a></span>
-									</div>
-									<p>This Portfolio is designed as a self learning project, as learning one subject or skill at a time is always the best option.</p>
-										<button  class="float-left" onclick="parent.location='https://github.com/Ripunjay42/ripunjay42.github.io.git'"><div style="color:rgb(104, 236, 43);"><i class="fa-brands fa-github" style="color:blueviolet; font-size:20px;"></i>Source Code</div></button>
-										<button  class="float-right" onclick="parent.location='https://ripunjay42.github.io'"><div style="color:rgb(104, 236, 43);"><i class="fa-solid fa-arrow-up-right-from-square" style="color:blueviolet; font-size:20px;"></i>Live Demo</div></button>
-									<br>
-									<br>
-									<br>
+								</div>
 							</article>
 						<!--skills-->
 						<article id="skill">
@@ -397,12 +424,14 @@
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
 								</form>
-								<ul class="icons">
-									<li><a href="https://www.linkedin.com/in/ripunjay-choudhury-83864524b/"><i class="fa-brands fa-linkedin" style="color:blueviolet;"></i></a></li>
-									<li><a href="https://github.com/Ripunjay42"><i class="fa-brands fa-github" style="color:blueviolet;"></i></a></li>
-									<li><a href="mailto:ripunjaychoudhury42@gmail.com?subject=subject text"><i class="fa-solid fa-envelope" style="color:blueviolet;"></i></a></li>
-									<li><a href="https://wa.me/+919127433184"><i class="fa-brands fa-square-whatsapp" style="color:blueviolet;"></i></a></li>
-								</ul>
+								<div class="aa">
+									<ul class="icons">
+										<li><a href="https://www.linkedin.com/in/ripunjay-choudhury-83864524b/"><i class="fa-brands fa-linkedin" style="color:blueviolet;"></i></a></li>
+										<li><a href="https://github.com/Ripunjay42"><i class="fa-brands fa-github" style="color:blueviolet;"></i></a></li>
+										<li><a href="mailto:ripunjaychoudhury42@gmail.com?subject=subject text"><i class="fa-solid fa-envelope" style="color:blueviolet;"></i></a></li>
+										<li><a href="https://wa.me/+919127433184"><i class="fa-brands fa-square-whatsapp" style="color:blueviolet;"></i></a></li>
+									</ul>
+								</div>
 							</article>
 
 						<!-- Elements -->
