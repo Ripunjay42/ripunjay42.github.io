@@ -1686,7 +1686,7 @@ input, select, textarea {
 		
 		@keyframes blink {
 			from, to { 
-				background-color: transparent 
+				background-color: transparent;
 			}
 			50% { 
 				background-color:blueviolet; 
