@@ -1681,7 +1681,7 @@ input, select, textarea {
 			width: 3px;
 			height: 25px;
 			background-color:blueviolet;
-			animation: blink 0.50s step-end infinite;
+			animation: blink 0.9s step-end infinite;
 		}
 		
 		@keyframes blink {
