@@ -5,9 +5,9 @@
 */
 // List of sentences
 var _CONTENT = [ 
-	"C/C++/JAVA.", 
-	"PYTHON/DJANGO.", 
-	"WEB DEVELOPMENT AND DESIGN."
+	"*C/C++/JAVA*", 
+	"*PYTHON/DJANGO*", 
+	"*WEB DEVELOPMENT AND DESIGN*"
 ];
 
 // Current sentence being processed
@@ -52,7 +52,7 @@ function Delete() {
 	_PART_INDEX--;
 
 	// If sentence has been deleted then start to display the next sentence
-	if(text === '') {
+	if(text === '*') {
 		clearInterval(_INTERVAL_VAL);
 
 		// If current sentence was last then display the first one, else move to the next
