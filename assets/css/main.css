@@ -1156,11 +1156,11 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg15.jpg");
+			background-image: url("../../images/bg11.jpeg");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
-			z-index: 1.4;
+			z-index: 1.5;
 		}
 		body.is-article-visible #bg:after {
 			-moz-transform: scale(1.0825);
@@ -1671,7 +1671,7 @@ input, select, textarea {
 			letter-spacing: 2px;
 			font-size: 18px;
 			color: rgb(104, 236, 43) ;
-        		font-weight:bold;
+        	font-weight:bold;
 			font-style: italic;
 		}
 		
@@ -1686,7 +1686,7 @@ input, select, textarea {
 		
 		@keyframes blink {
 			from, to { 
-				background-color: transparent;
+				background-color: transparent 
 			}
 			50% { 
 				background-color:blueviolet; 
