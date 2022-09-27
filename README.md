@@ -1,4 +1,5 @@
 MY PORTFOLIO !
 #WEB URL
 
-  https://ripunjay.netlify.app/
+
+  https://ripunjay-code.netlify.app/
