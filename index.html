@@ -9,6 +9,19 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="shortcut icon" href="#">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+		<script>
+			function required()
+				{
+					var a = document.getElementById("name").value;
+					var b = document.getElementById("email").value;
+					var c = document.getElementById("message").value;
+					if (a == "" || b=="" || c=="")
+					{
+						alert("Please input all details");
+						return false;
+					}
+				}
+		</script>
 		<style>
 			/* .change-content{
           			text-align: center;
@@ -406,7 +419,7 @@
 						<!-- Contact -->
 							<article id="contact">
 								<h3 class="major">Contact</h3>
-								<form action="https://formsubmit.co/4f88c1b59327df2ac353678efe91fba6" method="post">
+								<form action="https://formsubmit.co/4f88c1b59327df2ac353678efe91fba6" onsubmit="return required()" method="post" required>
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
