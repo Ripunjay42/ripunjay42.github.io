@@ -3,7 +3,7 @@
 particlesJS("bg", {
 	"particles": {
 	  "number": {
-		"value": 120,
+		"value": 100,
 		"density": {
 		  "enable": true,
 		  "value_area": 500
@@ -49,14 +49,14 @@ particlesJS("bg", {
 	  },
 	  "line_linked": {
 		"enable":  true,
-		"distance": 120,
+		"distance": 100,
 		"color": "#8A2BE2",
 		"opacity": 0.4,
 		"width": 1
 	  },
 	  "move": {
 		"enable": true,
-		"speed": 5,
+		"speed": 3,
 		"direction": "none",
 		"random": false,
 		"straight": false,
