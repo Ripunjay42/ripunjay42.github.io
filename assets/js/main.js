@@ -1,9 +1,8 @@
-
 // List of sentences
 var _CONTENT = [ 
-	"*C/C++/JAVA*", 
-	"*PYTHON/DJANGO*", 
-	"*WEB DEVELOPMENT AND DESIGN*"
+	"*C++/C/PYTHON PROGRAMMER*",  
+	"*(DJANGO)WEB DEVELOPER*",
+	"*COMPETITIVE CODER*"
 ];
 
 // Current sentence being processed
