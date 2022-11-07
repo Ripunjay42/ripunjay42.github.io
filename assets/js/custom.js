@@ -48,7 +48,7 @@ particlesJS("bg", {
 		}
 	  },
 	  "line_linked": {
-		"enable":  false,
+		"enable":  true,
 		"distance": 120,
 		"color": "#8A2BE2",
 		"opacity": 0.4,
