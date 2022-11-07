@@ -1117,11 +1117,11 @@ input, select, textarea {
 		left: 0;
 		width: 100%;
 		height: 100vh;
-		background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/bg11.jpeg");
+		background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("../../images/bg11.jpeg");
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
-		z-index: 1.5;
+		z-index:1;
 	}
 
 		/* #bg:before, #bg:after {
@@ -1144,6 +1144,7 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5));
+							linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75))
 			background-size: auto,600px 337px;
 			background-position: center,center;
 			background-repeat: no-repeat,repeat;
@@ -1165,7 +1166,7 @@ input, select, textarea {
 			background-repeat: no-repeat;
 			z-index: 1.5;
 		} */
-		body.is-article-visible #bg {
+		/* body.is-article-visible #bg {
 			-moz-transform: scale(1.0825);
 			-webkit-transform: scale(1.0825);
 			-ms-transform: scale(1.0825);
@@ -1178,7 +1179,7 @@ input, select, textarea {
 
 		body.is-preload #bg{
 			background-color: #000000;
-		}
+		} */
 
 /* Wrapper */
 
