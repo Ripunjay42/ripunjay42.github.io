@@ -85,11 +85,6 @@
 				transform: scale(1.02);
 				border: 4px solid rgb(157, 53, 255);
 			}
-			#resume img{
-				border-style:solid;
-     			border-color:blueviolet;
-     			border-width: 6px;
-			}
 			button{
 				width: 180px;
 				text-transform:none;
@@ -139,13 +134,9 @@
 			.skillbox:hover{
 				transform: scale(1.03);
 			}
-			/* .pro{
-				transition: 0.9s;
+			.pro{
+				padding-top:0px;
 			}
-			.pro:hover{
-				transform: scale(1.1);
-				
-			} */
 			.ico:hover{
 				border: 2px solid rgb(142, 38, 240);
 				transform: scale(1.03);
@@ -157,17 +148,21 @@
 			}
 			.containerr{
 				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 				justify-content: center;
 				align-items: center;
 				text-align: center;
 				row-gap: 30px;
 			}
 			.boxx{
-				margin: auto;
+				position: relative;
+				margin-left: 15px;
+				margin-right: 15px;
 				color: blueviolet;
 				box-shadow:10px 10px 10px 10px black;
 				border:1px solid rgb(100, 32, 190);
 				transition: 0.8s;
+				height: 865px;
 			}
 			.boxx:hover{
 				transform: scale(1.02);
@@ -176,8 +171,26 @@
 			.boxx h3{
 				padding-top: 20px;
 			}
-			.boxx .btn{
-				padding-bottom: 25px;
+			.boxx .btn {
+				position: absolute;
+                bottom:20px;
+        		left: 50%;
+				margin-left: -90px;
+				display: grid;
+				row-gap: 5px;
+			}
+			.cer, .fea{
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+				row-gap: 30px;
+			}
+			.cerb button
+			{	
+				position: absolute;
+				margin-left:-150px;
 			}
 		</style>
 	</head>
@@ -232,17 +245,16 @@
 								<h3 class="major">My Projects</h3>
 								<div class="containerr">
 									<div class="boxx">								
-										<h3 style="text-align:center;color:rgb(104, 236, 43);"><a>REAL TIME FACE MASK DETECTOR</a></h3>
+										<h3 style="text-align:center;color:rgb(104, 236, 43);"><a>FACE MASK DETECTOR</a></h3>
 										<div class="pro">
 											<span class="image main"><a><img loading="lazy" src="images/project15.gif" alt="centred-image" /></a></span>
 										</div>
 											<p>The project is called the Face Mask Detection where it uses facial and object recognition to accurately distinguish those with or without masks.
 											The program will use a device (e.g. webcam, camera etc.) through which it will detect whether the person or the persons are wearing face masks or not.
-											If it detects a person without face mask then it will capture an image and store it into the database. This project is needed to prevent higher risk of
-											spreading the coronavirus and to enforce those who don't follow proper guidelines to wear a mask.</p>
+											If it detects a person without face mask then it will capture an image and store it into the database.</p>
 											<div class="btn">
-											<button  class="float-left" onclick="window.open('https://github.com/Ripunjay42/Facemask_detector.git','_blank');"><div style="color:rgb(104, 236, 43);"><i class="fa-brands fa-github" style="color:blueviolet; font-size:20px"></i>Source Code</div></button>
-											<button  class="float-right" onclick="window.open('https://drive.google.com/drive/folders/16e4vVclG_VGmullu36Jjv7UXbqHZi7ZJ?usp=sharing','_blank');"><div style="color:rgb(104, 236, 43);"><i class="fa-solid fa-arrow-up-right-from-square" style="color:blueviolet; font-size:20px"></i>Demo</div></a></button>
+												<button  class="float-left" onclick="window.open('https://github.com/Ripunjay42/Facemask_detector.git','_blank');"><div style="color:rgb(104, 236, 43);"><i class="fa-brands fa-github" style="color:blueviolet; font-size:20px"></i>Source Code</div></button>
+												<button  class="float-right" onclick="window.open('https://drive.google.com/drive/folders/16e4vVclG_VGmullu36Jjv7UXbqHZi7ZJ?usp=sharing','_blank');"><div style="color:rgb(104, 236, 43);"><i class="fa-solid fa-arrow-up-right-from-square" style="color:blueviolet; font-size:20px"></i>Demo</div></a></button>
 											</div>
 									</div>	
 									<div class="boxx">								
@@ -252,8 +264,8 @@
 										</div>
 											<p>This Portfolio is designed as a self learning project, as learning one subject or skill at a time is always the best option.</p>
 											<div class="btn">									
-											<button  class="float-left" onclick="window.open('https://github.com/Ripunjay42/ripunjay42.github.io.git','_blank');"><div style="color:rgb(104, 236, 43);"><i class="fa-brands fa-github" style="color:blueviolet; font-size:20px;"></i>Source Code</div></button>
-											<button  class="float-right" onclick="window.open('https://ripunjay-code.netlify.app/','_blank');"><div style="color:rgb(104, 236, 43);"><i class="fa-solid fa-arrow-up-right-from-square" style="color:blueviolet; font-size:20px;"></i>Live Demo</div></button>
+												<button  class="float-left" onclick="window.open('https://github.com/Ripunjay42/ripunjay42.github.io.git','_blank');"><div style="color:rgb(104, 236, 43);"><i class="fa-brands fa-github" style="color:blueviolet; font-size:20px;"></i>Source Code</div></button>
+												<button  class="float-right" onclick="window.open('https://ripunjay-code.netlify.app/','_blank');"><div style="color:rgb(104, 236, 43);"><i class="fa-solid fa-arrow-up-right-from-square" style="color:blueviolet; font-size:20px;"></i>Live Demo</div></button>
 											</div>
 									</div>
 								</div>
@@ -378,36 +390,47 @@
 							
 							<h3 class="major">certificates</h3>
 							<div class="cer">
-								<h3 style="text-align:left;font-family:cursive;color:antiquewhite; font-size:small;font-weight: bold;"><a>1.DSA</a></h3>
-									<button  class="float-right" onclick="window.open('https://i.postimg.cc/13MpCt4N/dsa.png','_blank');"target="_blank"><div style="color:antiquewhite;font-size: 14px;"><i class="fa-solid fa-arrow-up-right-from-square" style="color:blueviolet; font-size:15px;"></i>credential</div></button><br><br>
-
-								<h3 style="text-align:left;font-family:cursive;color:antiquewhite; font-size:small;font-weight: bold;"><a>2.Java Programming</a></h3>
-									<button  class="float-right" onclick="window.open('https://i.postimg.cc/9QcdYTXh/java.png','_blank');"><div style="color:antiquewhite;font-size: 14px;"><i class="fa-solid fa-arrow-up-right-from-square" style="color:blueviolet; font-size:15px;"></i>credential</div></button><br><br>
-								
-								<h3 style="text-align:left;font-family:cursive;color:antiquewhite; font-size:small;font-weight: bold;"><a>3.Python Programming</a></h3>
-									<button  class="float-right" onclick="window.open('https://i.postimg.cc/rmPVZTwb/python-programming.png','_blank');"><div style="color:antiquewhite;font-size: 14px;"><i class="fa-solid fa-arrow-up-right-from-square" style="color:blueviolet; font-size:15px;"></i>credential</div></button><br><br>
-								
-								<h3 style="text-align:left;font-family:cursive;color:antiquewhite; font-size:small;font-weight: bold;"><a>4.NSE1 Network Security</a></h3>
-									<button  class="float-right" onclick="window.open('https://i.postimg.cc/8ccn72nt/NSE1.png','_blank');"><div style="color:antiquewhite;font-size: 14px;"><i class="fa-solid fa-arrow-up-right-from-square" style="color:blueviolet; font-size:15px;"></i>credential</div></button><br><br>	
-								
-								<h3 style="text-align:left;font-family:cursive;color:antiquewhite; font-size:small;font-weight: bold;"><a>5.NSE2 Network Security</a></h3>
-									<button  class="float-right" onclick="window.open('https://i.postimg.cc/jjBbJdCt/NSE2.png','_blank');"><div style="color:antiquewhite;font-size: 14px;"><i class="fa-solid fa-arrow-up-right-from-square" style="color:blueviolet; font-size:15px;"></i>credential</div></button><br><br>		
-								
-								<h3 style="text-align:left;font-family:cursive;color:antiquewhite; font-size:small;font-weight: bold;"><a>6.Microsoft Excel</a></h3>
-									<button  class="float-right" onclick="window.open('https://i.postimg.cc/9fMyvhqg/excel.png','_blank');"><div style="color:antiquewhite;font-size: 14px;"><i class="fa-solid fa-arrow-up-right-from-square" style="color:blueviolet; font-size:15px;"></i>credential</div></button><br><br>
-								
-								<h3 style="text-align:left;font-family:cursive;color:antiquewhite; font-size:small;font-weight: bold;"><a>7.Typing</a></h3>
-									<button  class="float-right" onclick="window.open('https://i.postimg.cc/MGF1wF76/typing.png','_blank');"><div style="color:antiquewhite;font-size: 14px;"><i class="fa-solid fa-arrow-up-right-from-square" style="color:blueviolet; font-size:15px;"></i>credential</div></button><br><br>
-							</div>
+								<div class="cerb">									
+									<h3 style="text-align:left;font-family:cursive;color:antiquewhite; font-size:small;font-weight: bold;"><a>1.DSA</a></h3>
+										<button  class="float-right" onclick="window.open('https://i.postimg.cc/13MpCt4N/dsa.png','_blank');"target="_blank"><div style="color:antiquewhite;font-size: 14px;"><i class="fa-solid fa-arrow-up-right-from-square" style="color:blueviolet; font-size:15px;"></i>credential</div></button><br><br>
+								</div>
+								<div class="cerb">
+									<h3 style="text-align:left;font-family:cursive;color:antiquewhite; font-size:small;font-weight: bold;"><a>2.Java Programming</a></h3>
+										<button  class="float-right" onclick="window.open('https://i.postimg.cc/9QcdYTXh/java.png','_blank');"><div style="color:antiquewhite;font-size: 14px;"><i class="fa-solid fa-arrow-up-right-from-square" style="color:blueviolet; font-size:15px;"></i>credential</div></button><br><br>
+								</div>
+								<div class="cerb">
+									<h3 style="text-align:left;font-family:cursive;color:antiquewhite; font-size:small;font-weight: bold;"><a>3.Python Programming</a></h3>
+										<button  class="float-right" onclick="window.open('https://i.postimg.cc/rmPVZTwb/python-programming.png','_blank');"><div style="color:antiquewhite;font-size: 14px;"><i class="fa-solid fa-arrow-up-right-from-square" style="color:blueviolet; font-size:15px;"></i>credential</div></button><br><br>
+								</div>
+								<div class="cerb">									
+									<h3 style="text-align:left;font-family:cursive;color:antiquewhite; font-size:small;font-weight: bold;"><a>4.NSE1 Network Security</a></h3>
+										<button  class="float-right" onclick="window.open('https://i.postimg.cc/8ccn72nt/NSE1.png','_blank');"><div style="color:antiquewhite;font-size: 14px;"><i class="fa-solid fa-arrow-up-right-from-square" style="color:blueviolet; font-size:15px;"></i>credential</div></button><br><br>	
+								</div>
+								<div class="cerb">									
+									<h3 style="text-align:left;font-family:cursive;color:antiquewhite; font-size:small;font-weight: bold;"><a>5.NSE2 Network Security</a></h3>
+										<button  class="float-right" onclick="window.open('https://i.postimg.cc/jjBbJdCt/NSE2.png','_blank');"><div style="color:antiquewhite;font-size: 14px;"><i class="fa-solid fa-arrow-up-right-from-square" style="color:blueviolet; font-size:15px;"></i>credential</div></button><br><br>		
+								</div>
+								<div class="cerb">									
+									<h3 style="text-align:left;font-family:cursive;color:antiquewhite; font-size:small;font-weight: bold;"><a>6.Microsoft Excel</a></h3>
+										<button  class="float-right" onclick="window.open('https://i.postimg.cc/9fMyvhqg/excel.png','_blank');"><div style="color:antiquewhite;font-size: 14px;"><i class="fa-solid fa-arrow-up-right-from-square" style="color:blueviolet; font-size:15px;"></i>credential</div></button><br><br>
+								</div>
+								<div class="cerb">									
+									<h3 style="text-align:left;font-family:cursive;color:antiquewhite; font-size:small;font-weight: bold;"><a>7.Typing</a></h3>
+										<button  class="float-right" onclick="window.open('https://i.postimg.cc/MGF1wF76/typing.png','_blank');"><div style="color:antiquewhite;font-size: 14px;"><i class="fa-solid fa-arrow-up-right-from-square" style="color:blueviolet; font-size:15px;"></i>credential</div></button><br><br>
+								</div>
+							</div><br>
 							
 							
 							<h3 class="major">featured</h3>
 							<div class="fea">
-								<h3 style="text-align:left;font-family:cursive;color:antiquewhite; font-size:small;font-weight: bold;"><a>1.Codechef</a></h3>
+								<div class="cerb">
+									<h3 style="text-align:left;font-family:cursive;color:antiquewhite; font-size:small;font-weight: bold;"><a>1.Codechef</a></h3>
 									<button  class="float-right" onclick="window.open('https://www.codechef.com/users/ripunjay42','_blank');"target="_blank"><div style="color:antiquewhite;font-size: 14px;"><i class="fa-solid fa-arrow-up-right-from-square" style="color:blueviolet; font-size:15px;"></i>link</div></button><br><br>
-
-								<h3 style="text-align:left;font-family:cursive;color:antiquewhite; font-size:small;font-weight: bold;"><a>2.LeetCode</a></h3>
+								</div>
+								<div class="cerb">
+									<h3 style="text-align:left;font-family:cursive;color:antiquewhite; font-size:small;font-weight: bold;"><a>2.LeetCode</a></h3>
 									<button  class="float-right" onclick="window.open('https://leetcode.com/Ripunjay42/','_blank');"><div style="color:antiquewhite;font-size: 14px;"><i class="fa-solid fa-arrow-up-right-from-square" style="color:blueviolet; font-size:15px;"></i>link</div></button><br><br>
+								</div>
 							</div>						
 						</article>
 						<!-- Contact -->
