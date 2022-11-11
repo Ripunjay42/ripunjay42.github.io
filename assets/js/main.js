@@ -1,8 +1,8 @@
 // List of sentences
 var _CONTENT = [ 
-	"*C++/C/PYTHON PROGRAMMER*",  
-	"*(DJANGO)WEB DEVELOPER*",
-	"*COMPETITIVE CODER*"
+	"*C++/C/Python Programmer*",  
+	"*(Django)Web Developer*",
+	"*Competitive Coder*"
 ];
 
 // Current sentence being processed
