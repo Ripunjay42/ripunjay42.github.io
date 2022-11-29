@@ -2,4 +2,4 @@ MY PORTFOLIO !
 #WEB URL
 
 
-  https://ripunjay-code.netlify.app/
+  https://ripunjay-code.netlify.app
