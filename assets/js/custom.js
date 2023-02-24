@@ -6,14 +6,14 @@ particlesJS("bg", {
 		"value": 120,
 		"density": {
 		  "enable": true,
-		  "value_area": 550
+		  "value_area": 650
 		}
 	  },
 	  "color":{
-		"value": "#00ffff"
+		"value": "00ffff"
 	  },
 	  "shape": {
-		"type": "circle",
+		"type": "star",
 		"stroke": {
 		  "width": 0,
 		  "color": "90EE90"
@@ -38,17 +38,17 @@ particlesJS("bg", {
 		}
 	  },
 	  "size": {
-		"value": 2.5,
+		"value": 2,
 		"random": true,
 		"anim": {
-		  "enable": false,
-		  "speed": 40,
+		  "enable": true,
+		  "speed": 3,
 		  "size_min": 0.1,
 		  "sync": false
 		}
 	  },
 	  "line_linked": {
-		"enable": false,
+		"enable":false,
 		"distance": 120,
 		"color": "#8A2BE2",
 		"opacity": 0.4,
@@ -56,7 +56,7 @@ particlesJS("bg", {
 	  },
 	  "move": {
 		"enable": true,
-		"speed": 2,
+		"speed": 3,
 		"direction": "none",
 		"random": false,
 		"straight": false,
