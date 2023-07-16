@@ -10,7 +10,7 @@ particlesJS("bg", {
 		}
 	  },
 	  "color":{
-		"value": "00ffff"
+		"value": "#C364FA"
 	  },
 	  "shape": {
 		"type": "star",
